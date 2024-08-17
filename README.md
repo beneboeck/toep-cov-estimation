@@ -6,7 +6,9 @@ Welcome to the (preliminary) repository for the paper "Gohberg-Semencul Estimati
 
 In our work, we introduce a class of Toeplitz Covariance Matrix Estimators and their inverses based on the so-called Gohberg-Semencul decomposition, which is closely related to autoregressive parameters.
 
-## Table of Contents
+## Usage
+
+Currently, only the projected least squares estimator (denoted as PLS in our work) is available. 
 
 ## Citation
 If you are using this code for your research, please cite
