@@ -8,7 +8,7 @@ In our work, we introduce a class of Toeplitz Covariance Matrix Estimators and t
 
 ## Usage
 
-Currently, only the real-valued projected least squares estimator (denoted as PLS in our work) is available. By running the script "main.m", you apply the PLS estimator with hyperparameter tuning to samples generated from an AR(3) process.
+Currently, only the real-valued projected least squares estimator (denoted as PLS in our work) is available. By running the script "main_example.m", you apply the PLS estimator with hyperparameter tuning to samples generated from an AR(3) process.
 
 ## Citation
 If you are using this code for your research, please cite
