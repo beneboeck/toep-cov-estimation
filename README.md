@@ -25,7 +25,7 @@ If you are using this code for your research, please cite
 }
 ```
 ## Licence of Contributions
-The contributions and extensions are also covered by the BSD 3-Clause License:
+This code is covered by the BSD 3-Clause License:
 
 > BSD 3-Clause License
 >
