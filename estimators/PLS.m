@@ -29,13 +29,13 @@ function alpha = PLS(X, sCov, P, N, w, K)
     % Make S_tilde symmetric by adding its transpose and subtracting the diagonal elements
     S_tilde = S_tilde + S_tilde' - diag(diag(S_tilde));
     
-    % Extract S_x as the flipped upper-left N_a x N_a submatrix of S_tilde
+    % Extract S_x as the flipped upper-left w x w submatrix of S_tilde
     S_x = flip(flip(S_tilde(1:w, 1:w), 1), 2);
     
-    % Extract c_x as the flipped last row of C_tilde corresponding to the (N_a+1)-th element
+    % Extract s_x as the flipped last row of C_tilde corresponding to the (w+1)-th element
     s_x = flip(S_tilde(w + 1, 1:w))';
     
-    % Perform Cholesky decomposition and invert C_x to solve for a_hat
+    % Perform Cholesky decomposition and invert S_x to solve for a_hat
     R = chol(S_x);
     Inv = R\(R'\diag(ones(w,1)));
     a_hat = Inv * s_x;
