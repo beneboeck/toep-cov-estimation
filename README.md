@@ -13,7 +13,7 @@ In our work, we introduce a class of Toeplitz Covariance Matrix Estimators and t
 
 ## Instructions
 
-The script "main_example.m" contains an exemplary matlab file, in which you can comment in your desired (inverse) covariance estimator. Our code comprises several estimators for Toeplitz structured covariances comprising our proposed estimators "PGD" and "PLS" estimator as well as the baselines "EM", "Circ", "Avg", "Band", "Tape", "TSL", "ShU", and "ShB" (see our paper for the acronyms). The script applies any estimator to N P-dimensional samples generated from an AR(3) process with adjustable parameters. The directory `our_estimators` contains our proposed estimators. The directory `cov_generators` contains scripts to generate Toeplitz covariance matrices. The `baselines` directory contains the baselines, and the `utils` directory stores some auxiliary scripts.
+The script `main_example.m` contains an exemplary matlab file, in which you can comment in your desired (inverse) covariance estimator. Our code comprises several estimators for Toeplitz structured covariances comprising our proposed estimators `PGD` and `PLS` estimator as well as the baselines `EM`, `Circ`, `Avg`, `Band`, `Tape`, `TSL`, `ShU`, and `ShB` (see our paper for the acronyms). The script applies any estimator to N P-dimensional samples generated from an AR(3) process with adjustable parameters. The directory `our_estimators` contains our proposed estimators. The directory `cov_generators` contains scripts to generate Toeplitz covariance matrices. The `baselines` directory contains the baselines, and the `utils` directory stores some auxiliary scripts.
 
 ## Citation
 If you are using this code for your research, please cite
