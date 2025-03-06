@@ -1,28 +1,29 @@
-# Gohberg-Semencul Estimation of Toeplitz Structured Covariance Matrices and Their Inverses
+# Gohberg-Semencul Covariance Estimation via Autoregressive Parameters
 
-Welcome to the (preliminary) repository for the paper "Gohberg-Semencul Estimation of Toeplitz Structured Covariance Matrices and Their Inverses"! This repository contains the code to reproduce the main results of our research work. As the paper is still undergoing the review process, the code, as well as the paper, may change continuously.
-
+Welcome to the repository for the paper "Gohberg-Semencul Covariance Estimation via Autoregressive Parameters"! This repository contains the code to reproduce the main results of our research work.
 ## Abstract
 
 In our work, we introduce a class of Toeplitz Covariance Matrix Estimators and their inverses based on the so-called Gohberg-Semencul decomposition, which is closely related to autoregressive parameters.
 
-## Usage
+## Instructions
 
-Currently, only the real-valued projected least squares estimator (denoted as PLS in our work) is available. By running the script "main_example.m", you apply the PLS estimator with hyperparameter tuning to samples generated from an AR(3) process.
+The script "main_example.m" contains an exemplary matlab file, in which you can comment in your desired (inverse) covariance estimator. Our proposed "PGD" and "PLS" estimator as well as the baselines "EM", "Circ", "Avg", "Band", "Tape", "TSL", "ShU", and "ShB" can be tested. The script applies any estimator to N P-dimensional samples generated from an AR(3) process with adjustable parameters. The directory `our_estimators` contains our proposed estimators. The directory `cov_generators` contains scripts to generate Toeplitz covariance matrices.The `baselines` directory contains the baselines, and the `utils` directory stores some auxiliary scripts.
 
 ## Citation
 If you are using this code for your research, please cite
 
 ```bibtex
-@misc{boeck2023toep,
-      title={{G}ohberg-{S}emencul Estimation of {T}oeplitz Structured Covariance Matrices and Their Inverses}, 
-      author={Benedikt B\"ock and Dominik Semmler and Benedikt Fesl and Michael Baur and Wolfgang Utschick},
-      year={2023},
-      eprint={2311.14995},
-      archivePrefix={arXiv},
-      primaryClass={eess.SP},
-      note={arXiv:2311.14995},
-}
+@ARTICLE{boeckToep2025,
+  author={Böck, Benedikt and Semmler, Dominik and Fesl, Benedikt and Baur, Michael and Utschick, Wolfgang},
+  journal={IEEE Transactions on Signal Processing}, 
+  title={Gohberg-Semencul Toeplitz Covariance Estimation via Autoregressive Parameters}, 
+  year={2025},
+  volume={73},
+  number={},
+  pages={858-875},
+  keywords={Estimation;Covariance matrices;Tuning;Matrix decomposition;Vectors;Array signal processing;Standards;Parallel processing;Optimization;Hands;Covariance estimation;autoregressive processes;Gohberg-Semencul;Toeplitz;likelihood estimation},
+  doi={10.1109/TSP.2025.3536101}}
+
 ```
 ## Licence of Contributions
 This code is covered by the BSD 3-Clause License:
