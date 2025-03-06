@@ -1,6 +1,12 @@
 # Gohberg-Semencul Covariance Estimation via Autoregressive Parameters
 
 Welcome to the repository for the paper "Gohberg-Semencul Covariance Estimation via Autoregressive Parameters"! This repository contains the code to reproduce the main results of our research work.
+
+Source code of the paper 
+>B. Böck, D. Semmler, B. Fesl, M. Baur and W. Utschick, "Gohberg-Semencul Toeplitz Covariance Estimation via Autoregressive Parameters," in IEEE Transactions on Signal Processing, vol. 73, pp. 858-875, 2025, doi: 10.1109/TSP.2025.3536101. 
+<br>
+Link to the paper: https://ieeexplore.ieee.org/document/10857370
+
 ## Abstract
 
 In our work, we introduce a class of Toeplitz Covariance Matrix Estimators and their inverses based on the so-called Gohberg-Semencul decomposition, which is closely related to autoregressive parameters.
